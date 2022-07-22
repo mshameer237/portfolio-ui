@@ -1,2 +1,6 @@
-# portfolio-ui
-react portfolio ui
+# portfolio
+
+portfolio website
+
+## Libraries
+`React` | `Framer Motion`

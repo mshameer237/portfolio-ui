@@ -4,7 +4,7 @@ import { FooterContainer, FooterText } from "./footer.styles";
 const Footer = () => {
   return (
     <FooterContainer>
-      <FooterText>© 2022. All rights reserved. Shameer M.</FooterText>
+      <FooterText>© 2022. All rights reserved.</FooterText>
     </FooterContainer>
   );
 };

@@ -18,6 +18,8 @@ function App() {
         <PageAnimation
           color={
             location.pathname === "/home"
+              ? "#222222"
+              : location.pathname === "/experience"
               ? "#689F38"
               : location.pathname === "/skills"
               ? "#16A085"
@@ -29,7 +31,7 @@ function App() {
               <Route element={<MainLayout />}>
                 <Route path="/" exact element={<Home />} />
                 <Route path="/home" element={<Home />} />
-                <Route path="/exp" element={<Experience />} />
+                <Route path="/experience" element={<Experience />} />
                 <Route path="/skills" element={<Skills />} />
               </Route>
             </Routes>

@@ -1,8 +1,0 @@
-/*  === ==  == AUTHOR: 01010011 01001000 01000001 01001101 01000101 01000101 01010010  == == ==  */
-/* Reset  */
-@import url(./reset.css);
-
-.main-layout-container {
-  height: 100vh;
-  overflow: auto;
-}

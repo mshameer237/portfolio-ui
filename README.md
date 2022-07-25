@@ -3,4 +3,4 @@
 portfolio website
 
 ## Libraries
-`React` | `Framer Motion`
+`React` | `Framer Motion` | `r3f`

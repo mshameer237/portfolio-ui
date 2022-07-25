@@ -1,0 +1,18 @@
+/*  === ==  == AUTHOR: 01010011 01001000 01000001 01001101 01000101 01000101 01010010  == == ==  */
+/* Reset  */
+@import url(./reset.css);
+
+/* font import  */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap");
+
+/* BASE STYLLES  */
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.main-layout-container {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}

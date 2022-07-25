@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 
 const animations = (color) => {
-  console.log(color, "color2");
   return {
     initial: { opacity: 0.4, background: color },
     animate: { opacity: 1, background: color },
@@ -10,7 +9,6 @@ const animations = (color) => {
 };
 
 const PageAnimation = ({ children, color }) => {
-  console.log(color, "color");
   return (
     <motion.div
       variants={animations(color)}

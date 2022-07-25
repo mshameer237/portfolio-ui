@@ -31,7 +31,7 @@ const MouseDirection = ({ children }) => {
             : navigate("/home");
         } else if (event.deltaY > 0) {
           console.log(event.deltaY, "scrolling down");
-          location.pathname === "/home"
+          location.pathname === "/home" || location.pathname === "/"
             ? navigate("/experience")
             : location.pathname === "/experience"
             ? navigate("/skills")

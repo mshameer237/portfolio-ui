@@ -23,7 +23,7 @@ function App() {
               ? "#689F38"
               : location.pathname === "/skills"
               ? "#16A085"
-              : "#3498DB"
+              : "#222222"
           }
         >
           <MouseDirection>

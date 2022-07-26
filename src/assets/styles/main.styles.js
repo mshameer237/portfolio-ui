@@ -10,7 +10,7 @@ export const MainTitleBlock = styled.div`
   align-items: flex-start;
   flex-direction: column;
   height: 100vh;
-  padding: 0 60px;
+  padding: ${(props) => (props.noPadding ? "0 20px" : "0 10px")};
 `;
 
 export const MainTitle = styled.div`
@@ -56,9 +56,104 @@ export const MailPhone = styled.a`
 `;
 
 export const AnimationContainer = styled.div`
+  width: 100%;
+  height: ${(props) => (props.alignBottom ? "calc(100vh - 59px)" : "")};
+  display: ${(props) => (props.alignBottom ? "flex" : "")};
+  justify-content: ${(props) => (props.alignBottom ? "flex-end" : "")};
+  align-items: ${(props) => (props.alignBottom ? "flex-end" : "")};
   svg {
-    width: 100%;
+    width: ${(props) => (props.w70 ? "70%" : "100%")};
   }
+  > div {
+    opacity: 0;
+  }
+  .__react_component_tooltip {
+    opacity: 1 !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    background: #111 !important ;
+
+    &::after {
+      display: none;
+    }
+  }
+`;
+
+export const TimelineCard = styled.div`
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 30px 40px;
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
+`;
+
+export const SummaryList = styled.ul`
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+  margin-top: 20px;
+`;
+
+export const SummaryListItem = styled.li`
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  list-style: none;
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 8px;
+  &:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: ${(props) => (props.isLight ? "#222" : "#222")};
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 6px;
+  }
+`;
+
+export const KeywordsBadge = styled.li`
+  background: ${(props) =>
+    props.isLight ? "rgba(255, 255, 255, 0.1)" : "rgba(255, 255, 255, 0.1)"};
+  color: ${(props) => (props.isLight ? "#222" : "#222")};
+  margin-right: 10px;
+  border-radius: 100px;
+  list-style: none;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 500;
+`;
+
+export const KeywordsText = styled.ul`
+  margin-bottom: 0;
+  margin-top: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 0;
+  margin-top: 15px;
+`;
+export const JobTitle = styled.h4`
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 0;
+`;
+
+export const CompanyText = styled.h4`
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  margin-top: 0;
+`;
+
+export const PageName = styled.div`
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  color: #fff;
+  margin-bottom: -74px;
+  margin-top: 43px;
   > div {
     opacity: 0;
   }

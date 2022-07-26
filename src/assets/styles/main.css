@@ -15,5 +15,15 @@ body {
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  padding: 10px 0;
+}
+
+.custom-tooltip {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  opacity: 1;
+}
+
+[data-name="container-fluid"] {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
 }

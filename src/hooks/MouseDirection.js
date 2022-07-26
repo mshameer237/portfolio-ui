@@ -24,7 +24,11 @@ const MouseDirection = ({ children }) => {
         if (event.deltaY < 0) {
           console.log(event.deltaY, "scrolling up");
           navigate("/home");
-          location.pathname === "/skills"
+          location.pathname === "/about"
+            ? navigate("/projects")
+            : location.pathname === "/projects"
+            ? navigate("/skills")
+            : location.pathname === "/skills"
             ? navigate("/experience")
             : location.pathname === "/experience"
             ? navigate("/home")
@@ -35,6 +39,12 @@ const MouseDirection = ({ children }) => {
             ? navigate("/experience")
             : location.pathname === "/experience"
             ? navigate("/skills")
+            : location.pathname === "/skills"
+            ? navigate("/projects")
+            : location.pathname === "/projects"
+            ? navigate("/about")
+            : location.pathname === "/about"
+            ? navigate("/about")
             : navigate("/skills");
         }
       }, 300)

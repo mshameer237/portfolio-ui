@@ -4,7 +4,7 @@ import { AnimatePresence } from "framer-motion";
 
 import MainLayout from "layout/MainLayout";
 
-import { Home, Experience, Skills } from "pages";
+import { Home, Experience, Skills, About, Projects } from "pages";
 
 import PageAnimation from "transition/PageAnimation";
 import MouseDirection from "hooks/MouseDirection";
@@ -22,8 +22,12 @@ function App() {
               : location.pathname === "/experience"
               ? "#689F38"
               : location.pathname === "/skills"
-              ? "#16A085"
-              : "#222222"
+              ? "#333333"
+              : location.pathname === "/projects"
+              ? "#689F38"
+              : location.pathname === "/about"
+              ? "#444444"
+              : "#222"
           }
         >
           <MouseDirection>
@@ -33,6 +37,8 @@ function App() {
                 <Route path="/home" element={<Home />} />
                 <Route path="/experience" element={<Experience />} />
                 <Route path="/skills" element={<Skills />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/projects" element={<Projects />} />
               </Route>
             </Routes>
           </MouseDirection>

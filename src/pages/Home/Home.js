@@ -75,7 +75,7 @@ const Home = () => {
             </MainTitleBlock>
           </Col>
           <Col col={6}>
-            <MainTitleBlock>
+            <MainTitleBlock noPadding>
               <AnimationContainer>
                 <motion.div
                   animate={{ x: 0, opacity: [0, 0.5, 1] }}

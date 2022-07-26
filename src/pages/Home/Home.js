@@ -18,7 +18,7 @@ import HomeAnimation from "animations/HomeAnimation";
 const Home = () => {
   return (
     <Section>
-      <Container fluid>
+      <Container fluid className="container-custom">
         <Row>
           <Col col={6}>
             <MainTitleBlock>

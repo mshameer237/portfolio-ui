@@ -128,12 +128,12 @@ const SkillAnimation = () => {
         />
         <motion.path
           animate={{
-            opacity: [0.8, 1],
+            opacity: [0.3, 1],
             x: [-249, -249.62661, -249],
             y: [-151.11166, -151.11166],
           }}
           initial="hidden"
-          transition={{ duration: 1, delay: 0, repeat: Infinity }}
+          transition={{ duration: 2, delay: 0, repeat: Infinity }}
           d="M546.12661,440.11485H324.47817A12.21074,12.21074,0,0,1,312.154,428.93419a12.00675,12.00675,0,0,1,11.97266-12.81934h222a12,12,0,0,1,0,24Z"
           transform="translate(-249.62661 -151.11166)"
           fill="#fff"

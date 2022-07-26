@@ -81,7 +81,7 @@ const ExperienceAnimation = () => {
           transition={{ duration: 1, delay: 0.8 }}
           d="M555.034,385.86772h-150a9,9,0,0,1,0-18h150a9,9,0,0,1,0,18Z"
           transform="translate(-305.93035 -105.86477)"
-          fill="#689F38"
+          fill="#ccc"
         />
         <motion.path
           animate={{
@@ -93,7 +93,7 @@ const ExperienceAnimation = () => {
           transition={{ duration: 1, delay: 0.9 }}
           d="M438.034,344.36772h-33a9,9,0,0,1,0-18h33a9,9,0,0,1,0,18Z"
           transform="translate(-305.93035 -105.86477)"
-          fill="#689F38"
+          fill="#ccc"
         />
         <motion.path
           animate={{
@@ -105,7 +105,7 @@ const ExperienceAnimation = () => {
           transition={{ duration: 1, delay: 0.8 }}
           d="M555.034,427.36772h-150a9,9,0,0,1,0-18h150a9,9,0,0,1,0,18Z"
           transform="translate(-305.93035 -105.86477)"
-          fill="#689F38"
+          fill="#ddd"
         />
         <motion.path
           animate={{
@@ -117,7 +117,7 @@ const ExperienceAnimation = () => {
           transition={{ duration: 1, delay: 0.9 }}
           d="M555.034,468.86772h-150a9,9,0,0,1,0-18h150a9,9,0,0,1,0,18Z"
           transform="translate(-305.93035 -105.86477)"
-          fill="#689F38"
+          fill="#ddd"
         />
         <motion.g
           animate={{
@@ -127,7 +127,7 @@ const ExperienceAnimation = () => {
           initial="hidden"
           transition={{ duration: 1, delay: 0.9 }}
         >
-          <circle cx="236.96655" cy="436.54264" r="35.81102" fill="#689F38" />
+          <circle cx="236.96655" cy="436.54264" r="35.81102" fill="#196F3D" />
           <motion.path
             animate={{
               x: [-300.93035, -303.93035, -305.93035],

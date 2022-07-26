@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 
 const AboutAnimation = () => {
   return (
@@ -137,18 +136,6 @@ const AboutAnimation = () => {
           cy="376.72401"
           r="5.604"
           fill="#fff"
-        />
-        <path
-          d="M981.29873,366.93967H731.40591a5.00573,5.00573,0,0,1-5-5V314.83958h2v47.10009a3.00328,3.00328,0,0,0,3,3H981.29873a3.00328,3.00328,0,0,0,3-3V314.51048h2v47.42919A5.00573,5.00573,0,0,1,981.29873,366.93967Z"
-          transform="translate(-113.2693 -156.48744)"
-          fill="#3f3d56"
-        />
-        <rect
-          x="371.39686"
-          y="157.35214"
-          width="587.21997"
-          height="2"
-          fill="#3f3d56"
         />
       </svg>
     </div>

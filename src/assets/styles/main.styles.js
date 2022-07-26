@@ -79,7 +79,7 @@ export const AnimationContainer = styled.div`
 `;
 
 export const TimelineCard = styled.div`
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.08);
   border-radius: 16px;
   padding: 30px 40px;
   /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
@@ -93,18 +93,19 @@ export const SummaryList = styled.ul`
 `;
 
 export const SummaryListItem = styled.li`
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 24px;
   list-style: none;
   padding-left: 20px;
   position: relative;
   margin-bottom: 8px;
+  color: #fff;
   &:before {
     content: "";
     width: 10px;
     height: 10px;
-    background: ${(props) => (props.isLight ? "#222" : "#222")};
+    background: ${(props) => (props.isLight ? "#fff" : "#fff")};
     display: inline-block;
     position: absolute;
     left: 0;
@@ -114,8 +115,9 @@ export const SummaryListItem = styled.li`
 
 export const KeywordsBadge = styled.li`
   background: ${(props) =>
-    props.isLight ? "rgba(255, 255, 255, 0.1)" : "rgba(255, 255, 255, 0.1)"};
-  color: ${(props) => (props.isLight ? "#222" : "#222")};
+    props.isLight ? "rgba(255, 255, 255, 0.2)" : "rgba(255, 255, 255, 0.2)"};
+  color: ${(props) =>
+    props.isLight ? "rgba(255, 255, 255, 0.8)" : "#rgba(255, 255, 255, 0.8)"};
   margin-right: 10px;
   border-radius: 100px;
   list-style: none;
@@ -132,12 +134,14 @@ export const KeywordsText = styled.ul`
   align-items: center;
   padding-left: 0;
   margin-top: 15px;
+  color: #fff;
 `;
 export const JobTitle = styled.h4`
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
   margin-top: 0;
+  color: #fff;
 `;
 
 export const CompanyText = styled.h4`
@@ -145,6 +149,8 @@ export const CompanyText = styled.h4`
   font-weight: 300;
   margin-bottom: 10px;
   margin-top: 0;
+  color: #fff;
+  font-style: italic;
 `;
 
 export const PageName = styled.div`
@@ -154,6 +160,12 @@ export const PageName = styled.div`
   color: #fff;
   margin-bottom: -74px;
   margin-top: 43px;
+  > div {
+    opacity: 0;
+  }
+`;
+
+export const TimeLineBlock = styled.div`
   > div {
     opacity: 0;
   }

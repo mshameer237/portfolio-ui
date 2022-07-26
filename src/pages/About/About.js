@@ -14,7 +14,7 @@ const About = () => {
   return (
     <div>
       <Section>
-        <Container fluid>
+        <Container fluid className="container-custom">
           <Row>
             <Col col={3}>
               <PageName>

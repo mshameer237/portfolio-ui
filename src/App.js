@@ -20,13 +20,13 @@ function App() {
             location.pathname === "/home"
               ? "#222222"
               : location.pathname === "/experience"
-              ? "#689F38"
+              ? "#196F3D"
               : location.pathname === "/skills"
-              ? "#333333"
+              ? "#1A5276"
               : location.pathname === "/projects"
-              ? "#689F38"
+              ? "#5B2C6F"
               : location.pathname === "/about"
-              ? "#444444"
+              ? "#212F3C"
               : "#222"
           }
         >

@@ -9,11 +9,12 @@ import {
   Section,
   PageName,
 } from "assets/styles/main.styles";
+import SkillBlock from "./components/SkillBlock";
 
 const Skills = () => {
   return (
     <Section>
-      <Container fluid>
+      <Container fluid className="container-custom">
         <Row>
           <Col col={3}>
             <PageName>
@@ -34,6 +35,9 @@ const Skills = () => {
                 <SkillAnimation />
               </motion.div>
             </AnimationContainer>
+          </Col>
+          <Col col={9}>
+            <SkillBlock />
           </Col>
         </Row>
       </Container>

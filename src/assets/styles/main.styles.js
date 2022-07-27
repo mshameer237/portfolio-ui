@@ -11,6 +11,10 @@ export const MainTitleBlock = styled.div`
   flex-direction: column;
   height: 100vh;
   padding: ${(props) => (props.noPadding ? "0 20px" : "0 10px")};
+  @media (max-width: 769px) {
+    height: auto;
+    padding: 20px 0;
+  }
 `;
 
 export const MainTitle = styled.div`
@@ -25,6 +29,11 @@ export const MainTitle = styled.div`
   }
   div {
     opacity: 0;
+  }
+  @media (max-width: 769px) {
+    font-size: 24px;
+    line-height: 38px;
+    margin-bottom: 0px;
   }
 `;
 
@@ -74,6 +83,11 @@ export const AnimationContainer = styled.div`
 
     &::after {
       display: none;
+    }
+  }
+  @media (max-width: 769px) {
+    svg {
+      height: auto;
     }
   }
 `;
@@ -169,4 +183,87 @@ export const TimeLineBlock = styled.div`
   > div {
     opacity: 0;
   }
+`;
+
+export const SkillCardContainer = styled.div`
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 30px 40px;
+`;
+
+export const SkillBlockContainer = styled.div`
+  margin-bottom: 30px;
+`;
+
+export const SkillTitleBlock = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+`;
+
+export const SkillTitle = styled.div`
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
+`;
+
+export const SkillImage = styled.img`
+  height: 30px;
+  margin-right: 10px;
+`;
+
+export const ImageBlock = styled.div`
+  margin-right: 0;
+`;
+
+export const ProjectContainer = styled.div`
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 30px 40px;
+`;
+
+export const Project404 = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg {
+    margin: auto;
+    width: 100%;
+  }
+`;
+
+export const NoProjectTitle = styled.div`
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  margin: 20px 0 20px 0;
+`;
+
+export const ProjectListContainer = styled.div`
+  > div {
+    opacity: 0;
+  }
+`;
+
+export const AboutContainer = styled.div`
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 30px 40px;
+`;
+
+export const BodyText = styled.div`
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 20px;
+`;
+
+export const SectionTitle = styled.div`
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 20px;
 `;

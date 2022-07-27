@@ -220,7 +220,12 @@ const HomeAnimation = () => {
             transform="translate(1273.37244 1029.81882) rotate(-180)"
             fill="#3f3d56"
           />
-          <rect
+          <motion.rect
+            animate={{
+              opacity: [0, 0.5, 1],
+            }}
+            initial="hidden"
+            transition={{ duration: 0.6, delay: 0, repeat: Infinity }}
             x="729.51001"
             y="595.58843"
             width="4.18849"
@@ -229,7 +234,12 @@ const HomeAnimation = () => {
             transform="translate(1256.61847 1029.81882) rotate(-180)"
             fill="#3f3d56"
           />
-          <rect
+          <motion.rect
+            animate={{
+              opacity: [0, 0.5, 1],
+            }}
+            initial="hidden"
+            transition={{ duration: 1, delay: 0, repeat: Infinity }}
             x="721.13302"
             y="595.58843"
             width="4.18849"
@@ -274,7 +284,12 @@ const HomeAnimation = () => {
             transform="translate(1441.11005 1038.1958) rotate(-180)"
             fill="#3f3d56"
           />
-          <rect
+          <motion.rect
+            animate={{
+              opacity: [0, 0.5, 1],
+            }}
+            initial="hidden"
+            transition={{ duration: 1, delay: 0, repeat: Infinity }}
             x="813.37881"
             y="599.77692"
             width="4.18849"
@@ -301,7 +316,12 @@ const HomeAnimation = () => {
             transform="translate(1390.84816 1038.1958) rotate(-180)"
             fill="#3f3d56"
           />
-          <rect
+          <motion.rect
+            animate={{
+              opacity: [0, 0.5, 1],
+            }}
+            initial="hidden"
+            transition={{ duration: 0.6, delay: 0, repeat: Infinity }}
             x="788.24786"
             y="599.77692"
             width="4.18849"
@@ -351,7 +371,12 @@ const HomeAnimation = () => {
             transform="translate(1307.07834 1038.1958) rotate(-180)"
             fill="#3f3d56"
           />
-          <rect
+          <motion.rect
+            animate={{
+              opacity: [0, 0.5, 1],
+            }}
+            initial="hidden"
+            transition={{ duration: 1, delay: 0, repeat: Infinity }}
             x="746.36295"
             y="599.77692"
             width="4.18849"
@@ -374,7 +399,12 @@ const HomeAnimation = () => {
             transform="translate(1273.57041 1038.1958) rotate(-180)"
             fill="#3f3d56"
           />
-          <rect
+          <motion.rect
+            animate={{
+              opacity: [0, 0.5, 1],
+            }}
+            initial="hidden"
+            transition={{ duration: 0.6, delay: 0, repeat: Infinity }}
             x="729.60899"
             y="599.77692"
             width="4.18849"
@@ -383,7 +413,12 @@ const HomeAnimation = () => {
             transform="translate(1256.81645 1038.1958) rotate(-180)"
             fill="#3f3d56"
           />
-          <rect
+          <motion.rect
+            animate={{
+              opacity: [0, 0.5, 1],
+            }}
+            initial="hidden"
+            transition={{ duration: 0.6, delay: 0, repeat: Infinity }}
             x="721.23201"
             y="599.77692"
             width="4.18849"
@@ -406,7 +441,7 @@ const HomeAnimation = () => {
               opacity: [0, 0.5, 1],
             }}
             initial="hidden"
-            transition={{ duration: 0.6, delay: 0, repeat: Infinity }}
+            transition={{ duration: 0.8, delay: 0, repeat: Infinity }}
             x="704.47805"
             y="599.77692"
             width="4.18849"
@@ -424,7 +459,12 @@ const HomeAnimation = () => {
             transform="translate(1348.12555 1048.24818) rotate(-180)"
             fill="#3f3d56"
           />
-          <rect
+          <motion.rect
+            animate={{
+              opacity: [0, 0.5, 1],
+            }}
+            initial="hidden"
+            transition={{ duration: 0.6, delay: 0, repeat: Infinity }}
             x="515.63106"
             y="358.73707"
             width="5.96585"
@@ -466,7 +506,7 @@ const HomeAnimation = () => {
               opacity: [0, 0.5, 1],
             }}
             initial="hidden"
-            transition={{ duration: 0.6, delay: 0, repeat: Infinity }}
+            transition={{ duration: 0.2, delay: 0, repeat: Infinity }}
             x="567.84144"
             y="358.4768"
             width="20.79613"
@@ -524,7 +564,7 @@ const HomeAnimation = () => {
               opacity: [0, 0.5, 1],
             }}
             initial="hidden"
-            transition={{ duration: 0.6, delay: 0, repeat: Infinity }}
+            transition={{ duration: 0.2, delay: 0, repeat: Infinity }}
             x="532.97666"
             y="372.83038"
             width="5.96585"
@@ -569,7 +609,12 @@ const HomeAnimation = () => {
             rx="1.56108"
             fill="#fff"
           />
-          <rect
+          <motion.rect
+            animate={{
+              opacity: [0, 0.5, 1],
+            }}
+            initial="hidden"
+            transition={{ duration: 0.6, delay: 0, repeat: Infinity }}
             x="541.64947"
             y="379.87703"
             width="5.96585"
@@ -619,7 +664,7 @@ const HomeAnimation = () => {
               opacity: [0, 0.5, 1],
             }}
             initial="hidden"
-            transition={{ duration: 0.6, delay: 0, repeat: Infinity }}
+            transition={{ duration: 0.2, delay: 0, repeat: Infinity }}
             x="557.36892"
             y="407.89751"
             width="5.96585"
@@ -635,7 +680,12 @@ const HomeAnimation = () => {
             rx="1.56108"
             fill="#fff"
           />
-          <rect
+          <motion.rect
+            animate={{
+              opacity: [0, 0.5, 1],
+            }}
+            initial="hidden"
+            transition={{ duration: 0.2, delay: 0, repeat: Infinity }}
             x="515.63106"
             y="407.89751"
             width="5.96585"
@@ -643,7 +693,12 @@ const HomeAnimation = () => {
             rx="1.56108"
             fill="#fff"
           />
-          <rect
+          <motion.rect
+            animate={{
+              opacity: [0, 0.5, 1],
+            }}
+            initial="hidden"
+            transition={{ duration: 0.2, delay: 0, repeat: Infinity }}
             x="524.47742"
             y="408.15779"
             width="20.79613"

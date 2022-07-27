@@ -32,3 +32,13 @@ body {
   padding-left: 40px !important;
   padding-right: 40px !important;
 }
+
+.rect-progress-bar-percent {
+  display: none !important;
+}
+
+@media (max-width: 769px) {
+  .main-layout-container {
+    overflow: auto;
+  }
+}

@@ -8,7 +8,9 @@ import {
   AnimationContainer,
   Section,
   PageName,
+  ProjectListContainer,
 } from "assets/styles/main.styles";
+import AboutBlock from "./components/AboutBlock";
 
 const About = () => {
   return (
@@ -16,7 +18,7 @@ const About = () => {
       <Section>
         <Container fluid className="container-custom">
           <Row>
-            <Col col={3}>
+            <Col col xl={3} md={3} xs={12} xxl={3}>
               <PageName>
                 <motion.div
                   animate={{ x: [-50, 0], opacity: [0, 0.5, 1] }}
@@ -35,6 +37,17 @@ const About = () => {
                   <AboutAnimation />
                 </motion.div>
               </AnimationContainer>
+            </Col>
+            <Col col xl={9} md={9} xs={12} xxl={9}>
+              <ProjectListContainer>
+                <motion.div
+                  animate={{ y: [-50, 0], opacity: [0, 0.5, 1] }}
+                  initial="hidden"
+                  transition={{ duration: 0.5, delay: 0.5 }}
+                >
+                  <AboutBlock />
+                </motion.div>
+              </ProjectListContainer>
             </Col>
           </Row>
         </Container>

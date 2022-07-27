@@ -17,7 +17,7 @@ const Experience = () => {
       <Section>
         <Container fluid className="container-custom">
           <Row>
-            <Col col={3}>
+            <Col col xl={3} md={3} xs={12} xxl={3}>
               <PageName>
                 <motion.div
                   animate={{ x: [-50, 0], opacity: [0, 0.5, 1] }}
@@ -37,7 +37,7 @@ const Experience = () => {
                 </motion.div>
               </AnimationContainer>
             </Col>
-            <Col col={9}>
+            <Col col xl={9} md={9} xs={12} xxl={9}>
               <TimelineBlock />
             </Col>
           </Row>

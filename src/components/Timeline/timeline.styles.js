@@ -47,11 +47,14 @@ export const TimelineContainer = styled.div`
     cursor: pointer;
     font-size: 14px;
     font-weight: 500;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.4);
     text-align: center;
     z-index: 2;
     outline: none;
+    transition: 0.3s all ease-in-out;
     &.react-tabs__tab--selected {
+      color: #fff;
+      transition: 0.3s all ease-in-out;
       ${TabIcon} {
         background-color: #fff;
         border: 2px solid transparent;

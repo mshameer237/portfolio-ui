@@ -14,13 +14,14 @@ import {
   AnimationContainer,
 } from "assets/styles/main.styles";
 import HomeAnimation from "animations/HomeAnimation";
+import HelperRobot from "components/HelperRobot";
 
 const Home = () => {
   return (
     <Section>
       <Container fluid className="container-custom">
         <Row>
-          <Col col={6}>
+          <Col col xl={6} md={6} xs={12} xxl={6}>
             <MainTitleBlock>
               <MainTitle>
                 <motion.div
@@ -72,9 +73,10 @@ const Home = () => {
                   </MailPhone>
                 </motion.div>
               </MailPhoneBlock>
+              <HelperRobot />
             </MainTitleBlock>
           </Col>
-          <Col col={6}>
+          <Col col xl={6} md={6} xs={12} xxl={6}>
             <MainTitleBlock noPadding>
               <AnimationContainer>
                 <motion.div

@@ -1,6 +1,7 @@
 # portfolio
 
-portfolio website
+portfolio website © 2022
 
 ## Libraries
-`React` | `Framer Motion` 
+
+`React` | `styled-components` | `Framer Motion` | `react-tabs` | `react-tooltip` | `react-animated-progress-bar`

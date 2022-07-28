@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Container, Row, Col } from "styled-bootstrap-grid";
+import { useNavigate } from "react-router-dom";
 
 import { FaLinkedinIn } from "react-icons/fa";
 import { MdAlternateEmail } from "react-icons/md";
@@ -12,11 +13,15 @@ import {
   MailPhoneBlock,
   MailPhone,
   AnimationContainer,
+  RobotContainer,
+  MobNav,
 } from "assets/styles/main.styles";
 import HomeAnimation from "animations/HomeAnimation";
 import HelperRobot from "components/HelperRobot";
+import { GoChevronDown } from "react-icons/go";
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <Section>
       <Container fluid className="container-custom">
@@ -73,7 +78,9 @@ const Home = () => {
                   </MailPhone>
                 </motion.div>
               </MailPhoneBlock>
-              <HelperRobot />
+              <RobotContainer>
+                <HelperRobot />
+              </RobotContainer>
             </MainTitleBlock>
           </Col>
           <Col col xl={6} md={6} xs={12} xxl={6}>
@@ -88,6 +95,21 @@ const Home = () => {
                 </motion.div>
               </AnimationContainer>
             </MainTitleBlock>
+            <motion.div
+              animate={{ y: [5, 0, 5] }}
+              transition={{ duration: 1, repeat: Infinity }}
+              initial="hidden"
+            >
+              <MobNav onClick={() => navigate("/experience")}>
+                <motion.div
+                  animate={{ y: [5, 0, 5], opacity: [0.5, 0.8, 1] }}
+                  transition={{ duration: 1, repeat: Infinity }}
+                  initial="hidden"
+                >
+                  <GoChevronDown color="#fff" size={24} />
+                </motion.div>
+              </MobNav>
+            </motion.div>
           </Col>
         </Row>
       </Container>

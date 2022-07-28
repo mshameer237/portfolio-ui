@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <>
-      {location.pathname === "/home" ? null : (
+      {location.pathname === "/home" || location.pathname === "/" ? null : (
         <HeaderContainer>
           <GoToHome onClick={() => navigate("/home")}>
             <GoHome color="#fff" size={30} />

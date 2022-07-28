@@ -267,3 +267,24 @@ export const SectionTitle = styled.div`
   line-height: 24px;
   margin-bottom: 20px;
 `;
+
+export const RobotContainer = styled.div`
+  @media (max-width: 769px) {
+    display: none;
+  }
+`;
+
+export const MobNav = styled.div`
+  display: none;
+
+  @media (max-width: 769px) {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #fff;
+    align-items: center;
+    margin: auto;
+  }
+`;

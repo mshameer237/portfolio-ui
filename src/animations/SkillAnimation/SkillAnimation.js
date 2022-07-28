@@ -10,6 +10,7 @@ const SkillAnimation = () => {
         width="1200.74679"
         height="270"
         viewBox="0 0 700.74679 497.77667"
+        id="inner"
       >
         <g>
           <path

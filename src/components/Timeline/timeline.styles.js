@@ -65,4 +65,18 @@ export const TimelineContainer = styled.div`
   .tab-panel {
     margin-top: 20px;
   }
+  @media (max-width: 769px) {
+    .tab-list {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 38px;
+        height: 2px;
+        width: 70%;
+        left: 58px;
+        background: rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+    }
+  }
 `;

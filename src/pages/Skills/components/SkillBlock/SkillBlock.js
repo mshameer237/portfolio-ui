@@ -16,7 +16,7 @@ const SkillBlock = ({ data }) => {
     <SkillCardContainer>
       <Row>
         {data.map((item) => (
-          <Col col={4}>
+          <Col col xl={4} md={4} xs={6} xxl={4}>
             <SkillBlockContainer>
               <SkillTitleBlock>
                 <ImageBlock>

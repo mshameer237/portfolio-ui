@@ -10,6 +10,7 @@ const AboutAnimation = () => {
         width="973.4614"
         height="217.02513"
         viewBox="0 0 973.4614 587.02513"
+        id="inner"
       >
         <motion.g
           animate={{ x: [100, -20] }}

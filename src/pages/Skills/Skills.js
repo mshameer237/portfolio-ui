@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Container, Row, Col } from "styled-bootstrap-grid";
+import { useNavigate } from "react-router-dom";
 
 import SkillAnimation from "animations/SkillAnimation";
 
@@ -22,11 +23,13 @@ import GitIcon from "assets/images/skills/git.svg";
 import AdobeIcon from "assets/images/skills/xd.svg";
 import AxureIcon from "assets/images/skills/axure.svg";
 import SletchIcon from "assets/images/skills/sketch.svg";
+import { GoChevronDown } from "react-icons/go";
 
 import {
   AnimationContainer,
   Section,
   PageName,
+  MobNav,
 } from "assets/styles/main.styles";
 
 const SKILL_LIST = [
@@ -113,6 +116,7 @@ const SKILL_LIST = [
 ];
 
 const Skills = () => {
+  const navigate = useNavigate();
   return (
     <Section>
       <Container fluid className="container-custom">
@@ -145,6 +149,15 @@ const Skills = () => {
             >
               <SkillBlock data={SKILL_LIST} />
             </motion.div>
+            <MobNav onClick={() => navigate("/projects")}>
+              <motion.div
+                animate={{ y: [4, 2, 4], opacity: [0.5, 0.8, 1] }}
+                transition={{ duration: 1, repeat: Infinity }}
+                initial="hidden"
+              >
+                <GoChevronDown color="#fff" size={24} />
+              </motion.div>
+            </MobNav>
           </Col>
         </Row>
       </Container>

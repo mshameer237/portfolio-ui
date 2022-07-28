@@ -95,21 +95,16 @@ const Home = () => {
                 </motion.div>
               </AnimationContainer>
             </MainTitleBlock>
-            <motion.div
-              animate={{ y: [5, 0, 5] }}
-              transition={{ duration: 1, repeat: Infinity }}
-              initial="hidden"
-            >
-              <MobNav onClick={() => navigate("/experience")}>
-                <motion.div
-                  animate={{ y: [5, 0, 5], opacity: [0.5, 0.8, 1] }}
-                  transition={{ duration: 1, repeat: Infinity }}
-                  initial="hidden"
-                >
-                  <GoChevronDown color="#fff" size={24} />
-                </motion.div>
-              </MobNav>
-            </motion.div>
+
+            <MobNav onClick={() => navigate("/experience")}>
+              <motion.div
+                animate={{ y: [4, 2, 4], opacity: [0.5, 0.8, 1] }}
+                transition={{ duration: 1, repeat: Infinity }}
+                initial="hidden"
+              >
+                <GoChevronDown color="#fff" size={24} />
+              </motion.div>
+            </MobNav>
           </Col>
         </Row>
       </Container>

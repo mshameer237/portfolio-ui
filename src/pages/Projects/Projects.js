@@ -1,18 +1,22 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Container, Row, Col } from "styled-bootstrap-grid";
+import { useNavigate } from "react-router-dom";
 
 import ProjectAnimation from "animations/ProjectAnimation";
+import { GoChevronDown } from "react-icons/go";
 
 import {
   AnimationContainer,
   Section,
   PageName,
   ProjectListContainer,
+  MobNav,
 } from "assets/styles/main.styles";
 import ProjectList from "./components/ProjectList";
 
 const Projects = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <Section>
@@ -48,6 +52,15 @@ const Projects = () => {
                   <ProjectList />
                 </motion.div>
               </ProjectListContainer>
+              <MobNav onClick={() => navigate("/about")}>
+                <motion.div
+                  animate={{ y: [4, 2, 4], opacity: [0.5, 0.8, 1] }}
+                  transition={{ duration: 1, repeat: Infinity }}
+                  initial="hidden"
+                >
+                  <GoChevronDown color="#fff" size={24} />
+                </motion.div>
+              </MobNav>
             </Col>
           </Row>
         </Container>

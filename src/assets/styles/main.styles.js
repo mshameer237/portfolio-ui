@@ -86,8 +86,13 @@ export const AnimationContainer = styled.div`
     }
   }
   @media (max-width: 769px) {
+    height: auto;
     svg {
       height: auto;
+
+      &#inner {
+        display: none;
+      }
     }
   }
 `;
@@ -96,7 +101,9 @@ export const TimelineCard = styled.div`
   background: rgba(0, 0, 0, 0.08);
   border-radius: 16px;
   padding: 30px 40px;
-  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
+  @media (max-width: 769px) {
+    padding: 20px;
+  }
 `;
 
 export const SummaryList = styled.ul`
@@ -149,6 +156,9 @@ export const KeywordsText = styled.ul`
   padding-left: 0;
   margin-top: 15px;
   color: #fff;
+  @media (max-width: 769px) {
+    display: none;
+  }
 `;
 export const JobTitle = styled.h4`
   font-size: 20px;
@@ -156,6 +166,7 @@ export const JobTitle = styled.h4`
   margin-bottom: 10px;
   margin-top: 0;
   color: #fff;
+  line-height: 28px;
 `;
 
 export const CompanyText = styled.h4`
@@ -165,6 +176,7 @@ export const CompanyText = styled.h4`
   margin-top: 0;
   color: #fff;
   font-style: italic;
+  line-height: 24px;
 `;
 
 export const PageName = styled.div`
@@ -176,6 +188,10 @@ export const PageName = styled.div`
   margin-top: 43px;
   > div {
     opacity: 0;
+  }
+  @media (max-width: 769px) {
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 `;
 
@@ -189,6 +205,9 @@ export const SkillCardContainer = styled.div`
   background: rgba(0, 0, 0, 0.08);
   border-radius: 16px;
   padding: 30px 40px;
+  @media (max-width: 769px) {
+    padding: 30px;
+  }
 `;
 
 export const SkillBlockContainer = styled.div`
@@ -220,6 +239,9 @@ export const ProjectContainer = styled.div`
   background: rgba(0, 0, 0, 0.08);
   border-radius: 16px;
   padding: 30px 40px;
+  @media (max-width: 769px) {
+    padding: 30px;
+  }
 `;
 
 export const Project404 = styled.div`
@@ -238,6 +260,7 @@ export const NoProjectTitle = styled.div`
   font-weight: 300;
   text-align: center;
   margin: 20px 0 20px 0;
+  line-height: 28px;
 `;
 
 export const ProjectListContainer = styled.div`
@@ -250,6 +273,9 @@ export const AboutContainer = styled.div`
   background: rgba(0, 0, 0, 0.08);
   border-radius: 16px;
   padding: 30px 40px;
+  @media (max-width: 769px) {
+    padding: 30px;
+  }
 `;
 
 export const BodyText = styled.div`
@@ -285,6 +311,6 @@ export const MobNav = styled.div`
     justify-content: center;
     border: 1px solid #fff;
     align-items: center;
-    margin: auto;
+    margin: 30px auto;
   }
 `;

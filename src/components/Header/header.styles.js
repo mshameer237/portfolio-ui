@@ -5,6 +5,9 @@ export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 769px) {
+    padding: 15px 15px;
+  }
 `;
 
 export const GoToHome = styled.div`
